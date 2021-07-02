@@ -1,0 +1,6 @@
+INSERT INTO series (id, title, author_id, subgenre_id) VALUES (1, 'Star Wars', 1, 1), (2, 'A Song of Ice and Fire', 2, 2);
+INSERT INTO subgenres (id, name) VALUES (1, 'Space Opera'), (2, 'High Fantasy');
+INSERT INTO authors (id, name) VALUES (1, 'George Lucas'), (2, 'George R. R. Martin');
+INSERT INTO books (id, title, year, series_id) VALUES (1, 'Star Wars', 1971, 1), (2, 'The Empire Strikes Back', 1973, 1), (3, 'The Return of the Jedi', 1976, 1), (4, 'Game of Thrones', 2001, 2), (5, 'A Clash of Kings', 2006, 2), (6, 'A Storm of Swords', 2010, 2);
+INSERT INTO characters (id, name, motto, species, author_id) VALUES (1, 'Luke Skywalker', 'NOOOOOO', 'Human', 1), (2, 'Darth Vader', 'I am your father', 'Cyborg', 1), (3, 'Chewbacca', 'WRRAAAAAGHHHH', 'Wookie', 1), (4, 'Han Solo', 'I shot first', 'Human', 1), (5, 'Jon Snow', 'I know nothing', 'Human', 2), (6, 'Arya Stark', 'I stab', 'Human', 2), (7, 'White Walker', 'Urrggghhhh', 'Wight', 2), (8, 'Ghost', 'Woof', 'Direwolf', 2);
+INSERT INTO character_books (id, character_id, book_id) VALUES (1, 1, 1), (2, 1, 2), (3, 1, 3), (4, 2, 1), (5, 2, 2), (6, 2, 3), (7, 3, 1), (8, 4, 2), (9, 5, 4), (10, 5, 5), (11, 5, 6), (12, 6, 4), (13, 6, 5), (14, 6, 6), (15, 7, 4), (16, 8, 6);
